@@ -11,3 +11,8 @@ sudo systemctl start telegraf
 sudo systemctl enable telegraf
 sudo systemctl status telegraf
 
+echo step 3
+cp telegraf.conf /etc/telegraf/telegraf.conf
+sudo systemctl restart telegraf
+sudo systemctl status telegraf
+

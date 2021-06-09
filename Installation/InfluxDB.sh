@@ -23,6 +23,8 @@ sudo systemctl enable influxdb
 
 echo step 3
 cp influxdb.conf  /etc/influxdb/influxdb.conf
+sudo systemctl restart influxdb
+sudo systemctl status influxdb
 
 echo step 4
 echo Adding Admin user and Database
